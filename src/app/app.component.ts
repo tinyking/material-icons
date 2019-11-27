@@ -1,7 +1,9 @@
 /* tslint:disable:no-string-literal */
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 import { map } from 'rxjs/operators';
+import { CopierService } from './copier.service';
 import { IconGroup } from './icons';
 
 @Component({
@@ -144,7 +146,9 @@ export class AppComponent {
   ICONS: IconGroup[] = [];
   iconGroups: IconGroup[] = [];
 
-  constructor(http: HttpClient) {
+  constructor(http: HttpClient,
+              private copier: CopierService,
+              private snackBar: MatSnackBar) {
     http.get('assets/icons.json').pipe(map(value => value['icons'])).subscribe(json => {
       console.log(json);
       const data = json as any[];
@@ -169,5 +173,12 @@ export class AppComponent {
   upperFirstChar(name: string) {
     const names = name.split('');
     return [names[0].toUpperCase(), ...names.slice(1)].join('');
+  }
+
+  doCopy(message: string) {
+    this.copier.copyText(message);
+    this.snackBar.open(`${message} copied`, '', {
+      duration: 2000
+    });
   }
 }

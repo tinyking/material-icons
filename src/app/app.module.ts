@@ -1,11 +1,18 @@
 import { HttpClientModule } from '@angular/common/http';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatButtonModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule, MatToolbarModule } from '@angular/material';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ClipboardModule } from 'ngx-clipboard';
-import { AppComponent } from './app.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatSnackBarModule,
+  MatToolbarModule
+} from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    ClipboardModule
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

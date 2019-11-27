@@ -12,12 +12,12 @@
 </mat-toolbar>
 
 <div class="main-content">
-  <mat-form-field>
-    <input matInput type="text" >
-    <button mat-button matSuffix mat-icon-button>
-      <mat-icon>close</mat-icon>
-    </button>
-  </mat-form-field>
+<!--  <mat-form-field>-->
+<!--    <input matInput type="text" >-->
+<!--    <button mat-button matSuffix mat-icon-button>-->
+<!--      <mat-icon>close</mat-icon>-->
+<!--    </button>-->
+<!--  </mat-form-field>-->
 
 
   <mat-card *ngFor="let group of iconGroups">
@@ -26,7 +26,7 @@
     </mat-card-header>
     <mat-card-content>
       <div fxLayout="row wrap" fxLayoutAlign="start center">
-        <div *ngFor="let icon of group.icons" fxLayout="column" fxLayoutAlign="center center" class="icon-box" >
+        <div *ngFor="let icon of group.icons" fxLayout="column" fxLayoutAlign="center center" class="icon-box" (click)="doCopy(icon)">
           <mat-icon>{{icon}}</mat-icon>
           <span>{{icon}}</span>
         </div>
