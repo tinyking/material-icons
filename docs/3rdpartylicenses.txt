@@ -82,9 +82,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/forms
-MIT
-
 @angular/material
 MIT
 The MIT License
@@ -114,9 +111,9 @@ THE SOFTWARE.
 
 @angular/material/card
 
-@angular/material/form-field
-
 @angular/material/icon
+
+@angular/material/snack-bar
 
 @angular/material/toolbar
 
@@ -145,12 +142,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
-ngx-clipboard
-MIT
-
-ngx-window-token
-MIT
 
 regenerator-runtime
 MIT
