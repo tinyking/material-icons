@@ -22,11 +22,11 @@
 
   <mat-card *ngFor="let group of iconGroups">
     <mat-card-header>
-      <mat-card-title><a [attr.id]="group.name" href="#{{group.name}}"><h4>{{group.name}}</h4></a></mat-card-title>
+      <mat-card-title><h4>{{upperFirstChar(group.name)}}</h4></mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <div fxLayout="row wrap" fxLayoutAlign="start center">
-        <div *ngFor="let icon of group.icons" fxLayout="column" fxLayoutAlign="center center" class="icon-box" ngxClipboard [cbContent]="icon" >
+        <div *ngFor="let icon of group.icons" fxLayout="column" fxLayoutAlign="center center" class="icon-box" >
           <mat-icon>{{icon}}</mat-icon>
           <span>{{icon}}</span>
         </div>
