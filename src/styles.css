@@ -5,6 +5,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .nav-bar-header {
   height: 56px !important;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
 }
 
 .mat-toolbar.mat-primary {
@@ -12,8 +15,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .main-content {
+  margin: 80px auto;
   max-width: 960px;
-  margin: 20px auto;
 }
 
 .icon-box {
