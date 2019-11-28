@@ -76,3 +76,13 @@ body {
   position: relative;
   padding-right: 10px;
 }
+
+.scroll-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.scroll-top .mat-fab {
+  background-color: #43a047;
+}

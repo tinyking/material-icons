@@ -205,4 +205,8 @@ export class AppComponent implements OnDestroy {
       panelClass: 'tk-bg-green'
     });
   }
+
+  scrollTop() {
+    document.documentElement.scrollTop = 0;
+  }
 }
