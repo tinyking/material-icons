@@ -201,7 +201,7 @@ export class AppComponent implements OnDestroy {
   doCopy(message: string) {
     this.copier.copyText(message);
     this.snackBar.open(`${message} copied`, '', {
-      duration: 20000000,
+      duration: 2000,
       panelClass: 'tk-bg-green'
     });
   }
