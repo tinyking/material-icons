@@ -1,13 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~material-design-icons-iconfont/dist/material-design-icons.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .nav-bar-header {
   height: 56px !important;
   position: fixed;
   top: 0;
   z-index: 99999;
+}
+
+.tk-bg-green {
+  background-color: #43a047 !important;
+  color: #fff !important;
 }
 
 .mat-toolbar.mat-primary {
@@ -24,11 +36,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   width: 112px;
   padding: 8px;
   cursor: pointer;
+  user-select: none;
 }
 
 .icon-box:hover {
-  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+  color: #43a047;
+  background: white;
+  transform: scale(1.1);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
 }
+
 .icon-box .mat-icon {
   font-size: 48px;
   width: 48px;
@@ -44,6 +61,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   white-space: nowrap;
 }
 
-.mat-card+.mat-card {
+.mat-card + .mat-card {
   margin-top: 20px;
+}
+
+.mat-simple-snackbar span {
+  display: inherit;
+}
+
+.mat-simple-snackbar span::before {
+  content: 'done';
+  font-family: 'Material Icons';
+  font-size: 44px;
+  position: relative;
+  padding-right: 10px;
 }

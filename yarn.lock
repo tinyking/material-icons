@@ -4824,6 +4824,11 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+material-design-icons-iconfont@^5.0.1:
+  version "5.0.1"
+  resolved "http://10.240.20.17:7001/material-design-icons-iconfont/download/material-design-icons-iconfont-5.0.1.tgz#371875ed7fe9c8c520bc7123c3231feeab731c31"
+  integrity sha1-Nxh17X/pyMUgvHEjwyMf7qtzHDE=
+
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "http://10.240.20.17:7001/md5.js/download/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -5105,21 +5110,6 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   version "2.6.1"
   resolved "http://10.240.20.17:7001/neo-async/download/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha1-rCetpmFn+ohJpq3dg39rGJrSCBw=
-
-ngx-clipboard@^12.2.1:
-  version "12.2.1"
-  resolved "https://registry.yarnpkg.com/ngx-clipboard/-/ngx-clipboard-12.2.1.tgz#3c2b89dc215bb3e0f4fa058b1f8ed6489cf6796e"
-  integrity sha512-9TzgVUKcVHGMYRa/DIit05+uVieiQhd8UEo7f97HTDiDeC1iXFgJjdHSGYyVWfVEQ5WuoryXmk6uYkgugf0y2g==
-  dependencies:
-    ngx-window-token "^2.0.0"
-    tslib "^1.9.0"
-
-ngx-window-token@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/ngx-window-token/-/ngx-window-token-2.0.1.tgz#8f91221af4116aa9f49bb3f7a6f1111639884fba"
-  integrity sha512-rvqdqJEfnWXQFU5fyfYt06E10tR/UtFOYdF3QebfcOh5VIJhnTKiprX8e4B9OrX7WEVFm9BT8uV72xXcEgsaKA==
-  dependencies:
-    tslib "^1.9.0"
 
 nice-try@^1.0.4:
   version "1.0.5"

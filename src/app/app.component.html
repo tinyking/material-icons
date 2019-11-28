@@ -4,6 +4,12 @@
       <h1>Material Icons</h1>
     </a>
   </div>
+    <mat-form-field style="font-size: 12px; width: 300px;" floatLabel="never">
+      <input name="search" matInput type="text" placeholder="输入查询内容" autocomplete="off" [formControl]="searchCtrl">
+      <button mat-button matSuffix mat-icon-button>
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-form-field>
   <div>
     <a mat-button class="nav-bar-menu" href="https://github.com/tinyking">
       <i class="fa fa-github fa-2x"></i>
@@ -12,12 +18,7 @@
 </mat-toolbar>
 
 <div class="main-content">
-<!--  <mat-form-field>-->
-<!--    <input matInput type="text" >-->
-<!--    <button mat-button matSuffix mat-icon-button>-->
-<!--      <mat-icon>close</mat-icon>-->
-<!--    </button>-->
-<!--  </mat-form-field>-->
+
 
 
   <mat-card *ngFor="let group of iconGroups">
